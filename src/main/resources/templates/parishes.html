@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 Semester Eksamen - Smittetryk</title>
+    <script th:src="@{javascript/parishes.js}" defer></script>
+</head>
+<body>
+<!--#region Header  -->
+<header th:insert="header"></header>
+<!--#endregion -->
+
+<h1>Sogn overblik</h1>
+
+<div id="modalholder" class="modal"></div>
+
+<button id="demoData" class="btn btn-success">Tilføj Demo Data</button>
+(Bemærk - Sletter ALLE Sogn)
+<br><br>
+
+<h3>Opret Sogn</h3>
+<div id="createParishDiv"></div>
+
+<br><br>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Sogne Kode</th>
+            <th scope="col">Sogne Navn</th>
+            <th scope="col">Smitteprocent</th>
+            <th scope="col">Nedlukket?</th>
+            <th scope="col">Nedluknings Dato</th>
+            <th scope="col">Kommune</th>
+        </tr>
+    </thead>
+    <tbody id="parishTableBody"></tbody>
+</table>
+
+</body>
+</html>

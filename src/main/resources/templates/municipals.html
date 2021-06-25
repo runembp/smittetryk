@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kommune Overblik</title>
+    <script th:src="@{javascript/municipals.js}" defer></script>
+</head>
+<body>
+<!--#region Header  -->
+<header th:insert="header"></header>
+<!--#endregion -->
+
+<h1>Kommune overblik</h1>
+
+<div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Kommune</th>
+            <th scope="col">Samlet Smittetryk</th>
+            <th scope="col">Antal kommuner</th>
+        </tr>
+        </thead>
+        <tbody id="municipalTableBody">
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
